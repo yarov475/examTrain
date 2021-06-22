@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div >
+<p class="root" id="root"></p>
+</div>
+<script>
+    let root = document.getElementById("root");
+    let data = '{ "name":"dima", "status":"aspirant", "age":32, "ava": "img/me.png"}'
+    const obj= JSON.parse(data);
+   root.innerHTML= obj.name +'<br/> '+ obj.status + "<hr>"
+</script>
+</body>
+</html>
